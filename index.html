@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的博客</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="cover-page">
+  <!-- 粒子动画背景 -->
+  <canvas id="particles" class="particle-canvas"></canvas>
+
+  <!-- 封面进入页：点"进入"跳到登录页 -->
+  <div class="cover">
+    <div class="cover-inner">
+      <div class="cover-avatar">👤</div>
+      <h1 class="cover-title">我的博客</h1>
+      <p class="cover-sub">记录学习与作品</p>
+      <a href="auth.html" class="enter-btn">点 击 进 入</a>
+    </div>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script>initParticles('particles');</script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
