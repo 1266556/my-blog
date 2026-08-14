@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 这行是手机适配的关键：让网页按手机屏幕宽度渲染 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的博客 · 个人作品集</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== 顶部导航栏 ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">我的博客</a>
+      <!-- 手机端显示的汉堡按钮 -->
+      <button class="menu-toggle" id="menuToggle" aria-label="菜单">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">首页</a>
+        <a href="#works">作品</a>
+        <a href="#posts">文章</a>
+        <a href="#about">关于</a>
+        <span id="userArea" class="user-area"></span>
+        <button class="theme-btn" id="themeBtn">🌙 深色</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 首屏个人介绍 ===== -->
+  <section class="hero" id="home">
+    <div class="hero-inner reveal">
+      <div class="avatar">👤</div>
+      <h1>你好，我是 <span class="accent">你的名字</span></h1>
+      <p class="tagline">一名热爱创造的开发者 · 记录学习与作品</p>
+      <div class="hero-btns">
+        <a href="#works" class="btn primary">查看作品</a>
+        <a href="#posts" class="btn outline">读我的文章</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 作品展示 ===== -->
+  <section class="section reveal" id="works">
+    <h2 class="section-title">我的作品</h2>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-emoji">📱</div>
+        <h3>项目一</h3>
+        <p>一句话介绍这个项目做了什么、用了什么技术。</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">🎨</div>
+        <h3>项目二</h3>
+        <p>一句话介绍这个项目做了什么、用了什么技术。</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">⚙️</div>
+        <h3>项目三</h3>
+        <p>一句话介绍这个项目做了什么、用了什么技术。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 文章列表 ===== -->
+  <section class="section reveal" id="posts">
+    <h2 class="section-title">最新文章</h2>
+    <div class="post-list">
+      <a href="post.html" class="post-item">
+        <span class="post-date">2026-08-14</span>
+        <span class="post-title">我的第一篇文章标题</span>
+      </a>
+      <a href="post.html" class="post-item">
+        <span class="post-date">2026-08-10</span>
+        <span class="post-title">怎么搭建个人博客（教程）</span>
+      </a>
+      <a href="post.html" class="post-item">
+        <span class="post-date">2026-08-01</span>
+        <span class="post-title">学习笔记：响应式设计入门</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 关于我 ===== -->
+  <section class="section reveal" id="about">
+    <h2 class="section-title">关于我</h2>
+    <p class="about-text">
+      这里写一段自我介绍：你是谁、在做什么、有什么兴趣。可以简单一点，
+      后面慢慢补充。比如：我喜欢折腾各种数码设备和软件，平时会记录一些
+      折腾过程和心得，欢迎交流～
+    </p>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <p>© 2026 我的博客 · 用 ❤️ 和代码搭建</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
