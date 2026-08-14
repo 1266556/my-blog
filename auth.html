@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录 / 注册 · 我的博客</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-page">
+  <!-- 背景图 + 粒子 + 悬浮方块 三层 -->
+  <div class="auth-bg"></div>
+  <canvas id="particles" class="particle-canvas"></canvas>
+
+  <!-- 鼠标滑动会飘动的方块（离开时弹回）-->
+  <div class="float-blocks">
+    <span class="float-block" data-depth="0.05" style="--x:8%;  --y:15%; --s:120px;"></span>
+    <span class="float-block" data-depth="0.09" style="--x:80%; --y:12%; --s:70px;"></span>
+    <span class="float-block" data-depth="0.04" style="--x:72%; --y:70%; --s:140px;"></span>
+    <span class="float-block" data-depth="0.07" style="--x:15%; --y:75%; --s:90px;"></span>
+    <span class="float-block" data-depth="0.11" style="--x:45%; --y:30%; --s:55px;"></span>
+    <span class="float-block" data-depth="0.06" style="--x:90%; --y:45%; --s:80px;"></span>
+  </div>
+
+  <div class="auth-wrap">
+    <div class="auth-card">
+      <h1 class="auth-logo">我的博客</h1>
+      <p class="auth-sub">登录后开启你的空间</p>
+
+      <!-- 登录/注册切换标签 -->
+      <div class="auth-tabs">
+        <button class="tab active" data-tab="login">登录</button>
+        <button class="tab" data-tab="register">注册</button>
+      </div>
+
+      <!-- 登录表单 -->
+      <form id="loginForm" class="auth-form active">
+        <div class="field">
+          <input type="text" id="loginUser" placeholder="用户名" autocomplete="username" />
+        </div>
+        <div class="field">
+          <input type="password" id="loginPass" placeholder="密码" autocomplete="current-password" />
+        </div>
+        <button type="submit" class="auth-btn">登 录</button>
+        <p class="auth-msg" id="loginMsg"></p>
+      </form>
+
+      <!-- 注册表单 -->
+      <form id="registerForm" class="auth-form">
+        <div class="field">
+          <input type="text" id="regUser" placeholder="用户名（至少3位）" autocomplete="username" />
+        </div>
+        <div class="field">
+          <input type="password" id="regPass" placeholder="密码（至少6位）" autocomplete="new-password" />
+        </div>
+        <div class="field">
+          <input type="password" id="regPass2" placeholder="确认密码" autocomplete="new-password" />
+        </div>
+        <button type="submit" class="auth-btn">注 册</button>
+        <p class="auth-msg" id="regMsg"></p>
+      </form>
+
+      <a href="index.html" class="auth-back">← 返回封面</a>
+    </div>
+  </div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/interactive.js"></script>
+</body>
+</html>
